@@ -1,0 +1,100 @@
+body {
+    background-color: #353b4e;
+    color: #f3f3f3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 20px;
+}
+
+#fileName {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#jsonResponse {
+    white-space: pre-wrap;
+    font-family: monospace;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#filePreview, #jsonResponse {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilos base para los botones */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+}
+
+#uploadButton {
+    background-color: #f44336;
+}
+
+#uploadButton:hover {
+    background-color: #e53935;
+    transform: scale(1.05); 
+}
+
+button:disabled {
+    background-color: #e9584d;
+    color: #d6d6d6;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#previewButton {
+    background-color: #2196F3;
+}
+
+#previewButton:hover {
+    background-color: #1e88e5;
+    transform: scale(1.05);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-file-upload:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
